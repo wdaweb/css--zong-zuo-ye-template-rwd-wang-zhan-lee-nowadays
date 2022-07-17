@@ -1,0 +1,163 @@
+.header{
+  position: sticky;
+}
+#frame-panel {
+  align-items: center;
+  background: #2d394b;
+  display: flex;
+  height: 60px;
+  padding: 10px 70px 10px 30px;
+  .back-to-product {
+    align-items: baseline;
+    color: #9cc9f5;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 28px;
+    margin-right: 20px;
+    max-width: 45%;
+    min-width: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .header-btn {
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 30px;
+    padding: 11px 20px;
+    white-space: nowrap;
+  }
+
+  .devices {
+    display: flex;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-10%);
+
+    .device-btn {
+      background: #2d394b;
+      cursor: pointer;
+      border: none;
+
+      &:hover {
+        .device-btn-icon {
+          fill: #fff;
+        }
+      }
+    }
+
+  }
+
+  .device-btn-icon {
+    fill: #8a94a4;
+    height: 32px;
+    width: 32px;
+  }
+
+  .header-buttons {
+    align-items: center;
+    display: flex;
+
+  }
+
+  .header-btn_cart {
+    background: #31af36;
+    color: #fff;
+    justify-content: center;
+    height: 42px;
+    min-width: 160px;
+    border: none;
+    outline: none;
+    margin-left: 350px;
+
+    &:hover {
+      background: #319f36;
+    }
+  }
+
+  .header-btn,
+  .header-buttons {
+    align-items: center;
+    display: flex;
+  }
+
+  .btn-icon {
+    fill: #fff;
+    margin-right: 10px;
+    width: 20px;
+  }
+
+  .header-btn_membership {
+    background: #fff;
+    color: #243238;
+
+    &:hover {
+      background: #00a3ff;
+      color: #fff;
+    }
+  }
+
+
+  .cart-button {
+    border-radius: 3px;
+    margin-right: 30px;
+    padding: 11px 20px;
+    padding-top: 10px;
+  }
+
+  #cart {
+    font-size: 1.5rem;
+    color: #b3c8e7;
+    cursor: pointer;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+}
+
+.frame-toggle {
+  background: #2d394b;
+  border: 1px solid #99a6b999;
+  border-radius: 0 0 3px 3px;
+  border-top: none;
+  cursor: pointer;
+  height: 50px;
+  position: fixed;
+  right: 10px;
+  top: 0;
+  width: 40px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    span {
+      border-color: #0000 #0000 #fff;
+      border-style: solid;
+      border-width: 0 8.5px 7px;
+    }
+  }
+  &:checked{
+    .wrap{
+      display: none;
+    }
+  }
+
+  .frame-toggler-btn-icon {
+    border-color: #0000 #0000 #99a6b9;
+    border-style: solid;
+    border-width: 0 8.5px 7px;
+    height: 0;
+    width: 0;
+    transform: none;
+  }
+}

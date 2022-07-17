@@ -1,0 +1,130 @@
+#section03{
+  padding: 80px 0;
+  height: 100%;
+  margin-top: 100px;
+
+  .container{
+    width: 100%;
+    padding: 0 15px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .previous-order{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .previous-order h1{
+    margin: 0;
+  }
+  .previous-order a{
+    text-decoration: none;
+    color: #ff8d00;
+    font-weight: bold;
+  }
+  .previous-order .card{
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 0 0 1px rgb(67 41 163 / 8%), 0 1px 5px 0 rgb(67 41 163 / 8%);
+    
+  }
+  .previous-order .row{
+    display: flex;
+    width: 100%;
+    margin: 0 -15px;
+    flex-wrap: wrap;
+  }
+
+  .previous-order .col{
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 50%;
+
+  }
+  
+  .previous-order .card:hover{
+    border: 1px solid #ff8d00;
+    border-radius: 3px;
+  }
+
+  
+  .previous-order img{
+    width: 100%;
+  }
+  .previous-order .card-body{
+    width: 100%;
+    padding: 3px 10px;
+
+  }
+  .previous-order .card-title a{
+    text-decoration: none;
+    color: #000;
+    transition: 0.5s;
+  }
+  .previous-order .card-title a:hover{
+    text-decoration: none;
+    color: #ff8d00;
+  }
+  .previous-order .subtitle h3{
+    font-size: 12px;
+    color: #6b6b83;
+    margin: 10px 0;
+  }
+  #trackOrder{
+    width: 100%;
+    text-align: center;
+    background: #fff;
+    color: #ff8d00;
+    border-radius: 3px;
+    border:1px solid rgba(67, 41, 163, .2);
+    padding: 8px 0;
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  #trackOrder:hover{
+    border:1px solid #ff8d00;
+  }
+  @include md{
+    #section03{
+      height: 100%;
+    }
+    .container{
+      width: 85%;
+    }
+    .previous-order .col:nth-child(1){
+      display: flex;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .previous-order .col:nth-child(1) h1{
+      display: inline-block;
+      width: 70%;
+      margin-right: auto;
+    }
+    .previous-order .col:nth-child(1) a{
+      display: inline-block;
+      text-align: right;
+      line-height: 50px;
+      width: 29%;
+      padding-right: 15px;
+    }
+    .previous-order .col{
+      width: 50%;
+      padding: 0 15px;
+
+    }
+  }
+  @include lg{
+    .container{
+      width: 75%;
+    }
+    .previous-order .col:nth-child(1){
+      width: 100%;
+    }
+    .previous-order .col{
+      width: 25%;
+    }
+  }
+}
